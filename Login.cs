@@ -31,6 +31,14 @@ namespace MiCajero3
                 MessageBox.Show("Debe de ingresar toda la información", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+             else if (txtUsuario.Text == "ADMIN" & txtContrasena.Text == "1234") {
+
+             this.Hide();//oculta el form
+             string rol = "ADMIN";
+             string nombre = "ADMINISTRADOR";
+             Principal objprincipal = new Principal(rol, nombre);
+             objprincipal.Show();
+
             else
             {
 
