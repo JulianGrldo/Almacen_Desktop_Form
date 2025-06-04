@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MiAlmacenDataSetVista" targetNamespace="http://tempuri.org/MiAlmacenDataSetVista.xsd" xmlns:mstns="http://tempuri.org/MiAlmacenDataSetVista.xsd" xmlns="http://tempuri.org/MiAlmacenDataSetVista.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MiAlmacenConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MiAlmacenConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Almacen.Properties.Settings.GlobalReference.Default.MiAlmacenConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AsistenteVistaTableAdapter" GeneratorDataComponentClassName="AsistenteVistaTableAdapter" Name="AsistenteVista" UserDataComponentName="AsistenteVistaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MiAlmacenConnectionString1 (Settings)" DbObjectName="MiAlmacen.dbo.AsistenteVista" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_CLIENTE, NOMBRE, ID_PRODUCTO, ID_TRANSACCION, FECHA, PRODUCTO, TOTAL, PRECIO FROM dbo.AsistenteVista</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_CLIENTE" DataSetColumn="ID_CLIENTE" />
+              <Mapping SourceColumn="NOMBRE" DataSetColumn="NOMBRE" />
+              <Mapping SourceColumn="ID_PRODUCTO" DataSetColumn="ID_PRODUCTO" />
+              <Mapping SourceColumn="ID_TRANSACCION" DataSetColumn="ID_TRANSACCION" />
+              <Mapping SourceColumn="FECHA" DataSetColumn="FECHA" />
+              <Mapping SourceColumn="PRODUCTO" DataSetColumn="PRODUCTO" />
+              <Mapping SourceColumn="TOTAL" DataSetColumn="TOTAL" />
+              <Mapping SourceColumn="PRECIO" DataSetColumn="PRECIO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MiAlmacenDataSetVista" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="MiAlmacenDataSetVista" msprop:Generator_DataSetName="MiAlmacenDataSetVista">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AsistenteVista" msprop:Generator_RowEvHandlerName="AsistenteVistaRowChangeEventHandler" msprop:Generator_RowDeletedName="AsistenteVistaRowDeleted" msprop:Generator_RowDeletingName="AsistenteVistaRowDeleting" msprop:Generator_RowEvArgName="AsistenteVistaRowChangeEvent" msprop:Generator_TablePropName="AsistenteVista" msprop:Generator_RowChangedName="AsistenteVistaRowChanged" msprop:Generator_RowChangingName="AsistenteVistaRowChanging" msprop:Generator_TableClassName="AsistenteVistaDataTable" msprop:Generator_RowClassName="AsistenteVistaRow" msprop:Generator_TableVarName="tableAsistenteVista" msprop:Generator_UserTableName="AsistenteVista">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_CLIENTE" msprop:Generator_ColumnPropNameInRow="ID_CLIENTE" msprop:Generator_ColumnPropNameInTable="ID_CLIENTEColumn" msprop:Generator_ColumnVarNameInTable="columnID_CLIENTE" msprop:Generator_UserColumnName="ID_CLIENTE" type="xs:int" />
+              <xs:element name="NOMBRE" msprop:Generator_ColumnPropNameInRow="NOMBRE" msprop:Generator_ColumnPropNameInTable="NOMBREColumn" msprop:Generator_ColumnVarNameInTable="columnNOMBRE" msprop:Generator_UserColumnName="NOMBRE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_PRODUCTO" msprop:Generator_ColumnPropNameInRow="ID_PRODUCTO" msprop:Generator_ColumnPropNameInTable="ID_PRODUCTOColumn" msprop:Generator_ColumnVarNameInTable="columnID_PRODUCTO" msprop:Generator_UserColumnName="ID_PRODUCTO" type="xs:int" />
+              <xs:element name="ID_TRANSACCION" msprop:Generator_ColumnPropNameInRow="ID_TRANSACCION" msprop:Generator_ColumnPropNameInTable="ID_TRANSACCIONColumn" msprop:Generator_ColumnVarNameInTable="columnID_TRANSACCION" msprop:Generator_UserColumnName="ID_TRANSACCION" type="xs:int" />
+              <xs:element name="FECHA" msprop:Generator_ColumnPropNameInRow="FECHA" msprop:Generator_ColumnPropNameInTable="FECHAColumn" msprop:Generator_ColumnVarNameInTable="columnFECHA" msprop:Generator_UserColumnName="FECHA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUCTO" msprop:Generator_ColumnPropNameInRow="PRODUCTO" msprop:Generator_ColumnPropNameInTable="PRODUCTOColumn" msprop:Generator_ColumnVarNameInTable="columnPRODUCTO" msprop:Generator_UserColumnName="PRODUCTO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTAL" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_UserColumnName="TOTAL" type="xs:int" />
+              <xs:element name="PRECIO" msprop:Generator_ColumnPropNameInRow="PRECIO" msprop:Generator_ColumnPropNameInTable="PRECIOColumn" msprop:Generator_ColumnVarNameInTable="columnPRECIO" msprop:Generator_UserColumnName="PRECIO" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AsistenteVista" />
+      <xs:field xpath="mstns:ID_CLIENTE" />
+      <xs:field xpath="mstns:ID_PRODUCTO" />
+      <xs:field xpath="mstns:ID_TRANSACCION" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
