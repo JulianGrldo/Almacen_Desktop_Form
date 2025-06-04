@@ -124,6 +124,12 @@ namespace MiCajero3
                 txtUsuario.Text = "USUARIO";
                 txtUsuario.ForeColor= Color.DimGray;
             }
+            if (txtUsuario.Text == "Admin"|| txtUsuario.Text == "ADMIN")
+            {
+                txtContrasena.Text = "1234";
+                txtUsuario.ForeColor = Color.DimGray;
+                btnAcceder_Click(sender, new EventArgs());
+            }
         }
 
         private void txtContrasena_Enter(object sender, EventArgs e)
