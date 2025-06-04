@@ -60,7 +60,7 @@ namespace MiCajero3
                                 this.Hide();//oculta el form
                                 string rol = objtabla[3].ToString().Trim().ToUpper();
                                 string nombre = objtabla[1].ToString().Trim().ToUpper();
-                                Principal objprincipal = new Principal(rol,nombre);
+                                Principal objprincipal = new Principal(rol, nombre);
                                 objprincipal.Show();
                             }
                             else
@@ -184,5 +184,6 @@ namespace MiCajero3
 
 
         }
+
     }
 }
