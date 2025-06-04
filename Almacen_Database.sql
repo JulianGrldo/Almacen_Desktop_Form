@@ -13,8 +13,8 @@ go
 CREATE TABLE Usuarios(
 ID_USUARIO int primary key identity(250,5)  not null,
 NOMBRE nvarchar(50)not null,
-CONTRASEÑA nvarchar(50) not null,
-ROL nvarchar(50) not null,
+CONTRASEÃ‘A nvarchar(50) not null,
+ROL nvarchar(50) not null,   
 PREGUNTA nvarchar(50)not null,
 RESPUESTA nvarchar (50)not null
 );
@@ -50,8 +50,9 @@ foreign key (NOMBRE_PRODUCTO) references Productos(PRODUCTO),
 foreign key (NOMBRE) references Clientes(NOMBRE)
 );
 
-INSERT INTO Usuarios (NOMBRE,CONTRASEÑA, ROL, PREGUNTA, RESPUESTA)
-VALUES ('Julio','1234', 'ADMINISTRADOR', 'MASCOTA', 'FIDO'),
+INSERT INTO Usuarios (NOMBRE,CONTRASEÃ‘A, ROL, PREGUNTA, RESPUESTA)
+VALUES ('ADMIN','1234', 'ADMINISTRADOR', 'COLOR', '1234'), 
+('Julio','1234', 'ADMINISTRADOR', 'MASCOTA', 'FIDO'),
 ('Caliche','1234','CAJERO','NOMBRE MADRE','CLAUDIA'),
 ('Adrian','1234','CAJERO','COLOR','AZUL');
 
@@ -69,7 +70,7 @@ VALUES ('POLVO AME', 15000, 60),
 ('AGUA DE ROSAS',5000,30),
 ('ILUMINADOR',13000,80),
 ('TINTA DE LABIOS',4000,50),
-('PESTAÑINA',24000,25),
+('PESTAÃ‘INA',24000,25),
 ('SHANPO PANTENE',13000,30),
 ('TINTE DE PELO',18000,60),
 ('BARNIZ VOGE',5000,45);
